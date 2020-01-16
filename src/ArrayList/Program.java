@@ -1,6 +1,7 @@
 package ArrayList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Program {
     public static void main(String[] args) {
@@ -25,6 +26,7 @@ public class Program {
 
         //checking on containing element
         if(people.contains("Tom")){
+            System.out.println("Tom index: " + people.indexOf("Tom"));
             System.out.println("ArrayList contains Tom");
         }
 
@@ -39,5 +41,11 @@ public class Program {
              ) {
             System.out.println(person);
         }
+
+        //set capacity of the list to 25
+        people.ensureCapacity(25);
+
+        //creating new ArrayList, which contains 250 elements of Integer by default (using UpCast)
+        List<Integer> numbers = new ArrayList<>(250);
     }
 }
