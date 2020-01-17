@@ -30,7 +30,7 @@ public class Program {
             System.out.printf("Key: %d  Value: %s \n", item.getKey(), item.getValue());
         }
 
-        Map<String, Person> people = new HashMap<String, Person>();
+        Map<String, Person> people = new HashMap<>();
         people.put("1240i54", new Person("Tom"));
         people.put("1564i55", new Person("Bill"));
         people.put("4540i56", new Person("Nick"));
