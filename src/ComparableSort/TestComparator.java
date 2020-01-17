@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class TestComparator {
     public static void main(String[] args) {
         Comparator<PersonWithAge> personName = (name1, name2) -> name1.getName().compareTo(name2.getName());
-        Comparator<PersonWithAge> personAge = (age1, age2) -> { age1.getAge() - age2.getAge()};
+        Comparator<PersonWithAge> personAge = (age1, age2) -> age1.getAge() - age2.getAge();
         Comparator<PersonWithAge> pcomp = personName.thenComparing(personAge);
 
         TreeSet<PersonWithAge> people = new TreeSet<>(pcomp);
